@@ -10,7 +10,7 @@ export const Toolbar = () => {
     ]
     return <>
         {
-            buttonData.map(button => <AlertButton message={button.message} children={button.children}/>)
+            buttonData.map(button => <AlertButton message={button.message || "Default message"} children={button.children || "Default children"}/>)
         }
     </>
 }
